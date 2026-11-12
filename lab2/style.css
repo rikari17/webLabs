@@ -1,0 +1,98 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Стили всей страницы */
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  line-height: 1.5;
+}
+
+/* Основной контейнер страницы */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Блок с кнопкой */
+.controls {
+  margin: 10px 0 20px;
+}
+
+/* Стиль кнопки */
+button {
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background 0.2s ease;
+}
+
+/* Эффект при наведении мышки */
+button:hover { background: #0056b3; }
+
+/* Визуальный индикатор заблокированной кнопки */
+button:disabled {
+  background: #9ec5fe;
+  cursor: not-allowed;
+}
+
+/* Класс для скрытия элементов */
+.hidden { display: none; }
+
+/* Индикатор загрузки */
+#loader {
+  color: #555;
+  font-style: italic;
+  margin: 10px 0;
+}
+
+/* Блок ошибки */
+#error {
+  color: #c0392b;
+  background: #fdecea;
+  border: 1px solid #f5c6cb;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+/* Сетка для карточек пользователей */
+#userList {
+  display: grid;
+  gap: 12px;
+}
+
+/* Карточка одного пользователя */
+.user-card {
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 12px 14px;
+  background: #fafafa;
+}
+
+/* Заголовок карточки */
+.user-card h3 {
+  margin: 0 0 6px;
+  color: #333;
+  font-size: 17px;
+}
+
+/* Текст внутри карточки */
+.user-card p {
+  margin: 2px 0;
+  color: #666;
+  font-size: 14px;
+}
